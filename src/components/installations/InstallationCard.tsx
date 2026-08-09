@@ -12,7 +12,16 @@ export function InstallationCard({ installation, onOpen }: InstallationCardProps
   return (
     <button type="button" className={styles.card} onClick={onOpen}>
       <div className={styles.imageBox}>
-        <ImagePlaceholder icon={MapPin} label={`Installation at ${installation.location}`} />
+        {installation.image ? (
+          <img
+            src={installation.image}
+            alt={`Aquajett water heater installation at ${installation.location}`}
+            className={styles.image}
+            loading="lazy"
+          />
+        ) : (
+          <ImagePlaceholder icon={MapPin} label={`Installation at ${installation.location}`} />
+        )}
         <div className={styles.overlay}>
           <MapPin size={16} aria-hidden="true" />
           <span>

@@ -43,7 +43,15 @@ export function Lightbox({ installations, activeIndex, onClose, onNavigate }: Li
 
       <div className={styles.content}>
         <div className={styles.imageBox}>
-          <ImagePlaceholder icon={MapPin} label={`Installation at ${installation.location}`} />
+          {installation.image ? (
+            <img
+              src={installation.image}
+              alt={`Aquajett water heater installation at ${installation.location}`}
+              className={styles.image}
+            />
+          ) : (
+            <ImagePlaceholder icon={MapPin} label={`Installation at ${installation.location}`} />
+          )}
         </div>
         <div className={styles.caption}>
           <h3>{installation.location}</h3>

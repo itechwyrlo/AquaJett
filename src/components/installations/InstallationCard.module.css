@@ -15,6 +15,12 @@
   width: 100%;
   height: 100%;
 }
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .imageBox > *:first-child {
   transition: transform var(--duration-standard) var(--ease-out);
 }
