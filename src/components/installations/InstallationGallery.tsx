@@ -9,6 +9,7 @@ import styles from './InstallationGallery.module.css';
 
 export function InstallationGallery() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const installationsWithImages = installations.filter((installation) => installation.image);
 
   return (
     <section id="gallery" className={styles.section}>
@@ -19,7 +20,7 @@ export function InstallationGallery() {
           description="A sample of homes and properties Aquajett has supplied and installed for."
         />
         <div className={styles.grid}>
-          {installations.map((installation, index) => (
+          {installationsWithImages.map((installation, index) => (
             <RevealOnScroll key={installation.id} delayMs={(index % 4) * 70}>
               <InstallationCard installation={installation} onOpen={() => setActiveIndex(index)} />
             </RevealOnScroll>
@@ -29,7 +30,7 @@ export function InstallationGallery() {
 
       {activeIndex !== null && (
         <Lightbox
-          installations={installations}
+          installations={installationsWithImages}
           activeIndex={activeIndex}
           onClose={() => setActiveIndex(null)}
           onNavigate={setActiveIndex}

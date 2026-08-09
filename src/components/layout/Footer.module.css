@@ -13,15 +13,9 @@
   border-radius: var(--radius-sm);
   padding: var(--space-2) var(--space-3);
 }
-.logoMark {
+.logo {
   display: block;
-  height: 40px;
-  width: 40px;
-  object-fit: contain;
-}
-.logoFull {
-  display: none;
-  height: 26px;
+  height: 48px;
   width: auto;
 }
 
@@ -99,10 +93,7 @@
 }
 
 @media (min-width: 992px) {
-  .logoMark {
-    display: none;
-  }
-  .logoFull {
-    display: block;
+  .logo {
+    height: 56px;
   }
 }

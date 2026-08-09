@@ -4,8 +4,7 @@ import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
 import { MobileMenu } from '../navigation/MobileMenu';
 import { navItems, contactInfo } from '../../data/nav';
-import logo from '../../assets/logo/aquajett-primary-logo.png';
-import mark from '../../assets/logo/aquajett-mark.png';
+import logo from '../../assets/logo/primary-logo.png';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -23,8 +22,7 @@ export function Header() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <Container className={styles.inner}>
         <a href="#top" className={styles.logoLink} aria-label="Aquajett Water Heaters home">
-          <img src={mark} alt="Aquajett Water Heaters" className={styles.logoMark} />
-          <img src={logo} alt="Aquajett Water Heaters" className={styles.logoFull} />
+          <img src={logo} alt="Aquajett Water Heaters" className={styles.logo} />
         </a>
 
         <nav className={styles.nav} aria-label="Primary">

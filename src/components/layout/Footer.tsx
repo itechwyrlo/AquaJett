@@ -2,8 +2,7 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 import { Container } from '../ui/Container';
 import { FacebookIcon } from '../ui/FacebookIcon';
 import { contactInfo, navItems } from '../../data/nav';
-import logo from '../../assets/logo/aquajett-primary-logo.png';
-import mark from '../../assets/logo/aquajett-mark.png';
+import logo from '../../assets/logo/secondary-logo.png';
 import styles from './Footer.module.css';
 
 export function Footer() {
@@ -15,8 +14,7 @@ export function Footer() {
         <div className={styles.grid}>
           <div className={styles.brand}>
             <span className={styles.logoBadge}>
-              <img src={mark} alt="Aquajett Water Heaters" className={styles.logoMark} />
-              <img src={logo} alt="Aquajett Water Heaters" className={styles.logoFull} />
+              <img src={logo} alt="Aquajett Water Heaters" className={styles.logo} />
             </span>
             <p className={styles.tagline}>
               Supplying water heater needs in the South, Metro Manila, and nationwide.

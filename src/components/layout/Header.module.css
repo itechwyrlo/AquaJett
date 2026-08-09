@@ -25,13 +25,8 @@
   display: inline-flex;
   align-items: center;
 }
-.logoMark {
-  height: 36px;
-  width: auto;
-}
-.logoFull {
-  display: none;
-  height: 36px;
+.logo {
+  height: 56px;
   width: auto;
 }
 
@@ -99,11 +94,7 @@
   .menuButton {
     display: none;
   }
-  .logoMark {
-    display: none;
-  }
-  .logoFull {
-    display: block;
-    height: 36px;
+  .logo {
+    height: 64px;
   }
 }
