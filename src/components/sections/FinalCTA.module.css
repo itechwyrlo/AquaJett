@@ -1,0 +1,55 @@
+/*
+ * Duplicated locally because Vite's CSS Modules transform scopes
+ * animation-name identifiers per-file, breaking references to the shared
+ * @keyframes in styles/animations.css. See Hero.module.css for detail.
+ */
+@keyframes floatParticle {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-16px) translateX(6px); }
+}
+
+.section {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--space-24);
+  background: var(--color-primary-dark);
+  text-align: center;
+}
+.glow {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  width: 60vw;
+  height: 60vw;
+  max-width: 640px;
+  max-height: 640px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(0, 175, 193, 0.25) 0%, transparent 70%);
+  animation: floatParticle 8s var(--ease-in-out) infinite;
+  pointer-events: none;
+}
+.content {
+  position: relative;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+.heading {
+  font-size: var(--text-section);
+  color: var(--color-white);
+}
+.description {
+  margin-top: var(--space-4);
+  color: rgba(221, 247, 250, 0.85);
+  font-size: var(--text-lg);
+}
+.actions {
+  margin-top: var(--space-8);
+  display: flex;
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow {
+    animation: none;
+  }
+}

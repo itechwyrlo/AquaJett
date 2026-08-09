@@ -1,0 +1,56 @@
+:root {
+  /* Colors */
+  --color-primary: #073B5C;
+  --color-primary-dark: #052B43;
+  --color-accent: #00AFC1;
+  --color-accent-light: #DDF7FA;
+  --color-background: #F5F9FB;
+  --color-white: #FFFFFF;
+  --color-text: #102A43;
+  --color-text-secondary: #526777;
+  --color-border: #D9E5EA;
+  --color-success: #16845B;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(7, 59, 92, 0.06), 0 1px 1px rgba(7, 59, 92, 0.04);
+  --shadow-md: 0 8px 24px rgba(7, 59, 92, 0.1), 0 2px 6px rgba(7, 59, 92, 0.06);
+  --shadow-lg: 0 20px 48px rgba(7, 59, 92, 0.14), 0 6px 16px rgba(7, 59, 92, 0.08);
+
+  /* Motion */
+  --duration-fast: 180ms;
+  --duration-standard: 300ms;
+  --duration-large: 550ms;
+  --duration-ambient: 5000ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Layout */
+  --container-max: 1280px;
+  --container-padding: 1.25rem;
+
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans Variable', system-ui, sans-serif;
+  --font-body: 'Inter Variable', system-ui, sans-serif;
+  --text-hero: clamp(2.5rem, 7vw, 5.5rem);
+  --text-section: clamp(2rem, 4vw, 3.5rem);
+  --text-lg: 1.125rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+}

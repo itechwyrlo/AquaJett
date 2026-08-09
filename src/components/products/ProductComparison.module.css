@@ -1,0 +1,72 @@
+/*
+ * Duplicated locally because Vite's CSS Modules transform scopes
+ * animation-name identifiers per-file, breaking references to the shared
+ * @keyframes in styles/animations.css. See Hero.module.css for detail.
+ */
+@keyframes waterFlowDash {
+  to { stroke-dashoffset: -40; }
+}
+
+.wrapper {
+  margin-top: var(--space-16);
+}
+.card {
+  margin-top: var(--space-8);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  text-align: center;
+}
+
+.tabs {
+  display: inline-flex;
+  background: var(--color-background);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  gap: 4px;
+}
+.tab {
+  border: none;
+  background: transparent;
+  padding: var(--space-2) var(--space-6);
+  min-height: 44px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-out), color var(--duration-fast) var(--ease-out);
+}
+.tabActive {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.diagram {
+  margin-top: var(--space-8);
+}
+.svg {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+.flowLine {
+  animation: waterFlowDash 1.4s linear infinite;
+}
+.label {
+  font-size: 12px;
+  font-family: var(--font-body);
+  fill: var(--color-text-secondary);
+  dominant-baseline: middle;
+}
+
+.caption {
+  margin-top: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flowLine {
+    animation: none;
+  }
+}

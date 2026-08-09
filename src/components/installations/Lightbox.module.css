@@ -1,0 +1,103 @@
+/*
+ * Duplicated locally because Vite's CSS Modules transform scopes
+ * animation-name identifiers per-file, breaking references to the shared
+ * @keyframes in styles/animations.css. See Hero.module.css for detail.
+ */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(5, 43, 67, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  animation: scaleIn var(--duration-standard) var(--ease-out);
+}
+
+.content {
+  width: 100%;
+  max-width: 32rem;
+}
+.imageBox {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.caption {
+  margin-top: var(--space-4);
+  text-align: center;
+  color: var(--color-white);
+}
+.caption p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: var(--space-1);
+}
+
+.close {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  cursor: pointer;
+}
+.close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  cursor: pointer;
+}
+.nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.prev {
+  left: var(--space-4);
+}
+.next {
+  right: var(--space-4);
+}
+
+@media (max-width: 575px) {
+  .nav {
+    width: 40px;
+    height: 40px;
+  }
+  .prev {
+    left: var(--space-2);
+  }
+  .next {
+    right: var(--space-2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    animation: none;
+  }
+}

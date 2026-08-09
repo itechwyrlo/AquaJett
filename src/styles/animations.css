@@ -1,0 +1,53 @@
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes steamDrift {
+  0% { transform: translateY(0) scaleX(1); opacity: 0.35; }
+  50% { transform: translateY(-14px) scaleX(1.05); opacity: 0.55; }
+  100% { transform: translateY(-28px) scaleX(1); opacity: 0; }
+}
+
+@keyframes floatParticle {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-16px) translateX(6px); }
+}
+
+@keyframes waterFlowDash {
+  to { stroke-dashoffset: -40; }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity var(--duration-large) var(--ease-out),
+              transform var(--duration-large) var(--ease-out);
+}
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity var(--duration-large) var(--ease-out),
+              transform var(--duration-large) var(--ease-out);
+}
+.reveal-scale.reveal-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-scale {
+    transform: none;
+    transition: opacity var(--duration-standard) linear;
+  }
+}
