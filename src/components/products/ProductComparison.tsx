@@ -31,7 +31,6 @@ export function ProductComparison() {
         align="left"
         eyebrow="Installation"
         title="Singlepoint or Multipoint"
-        description="Either the Supreme or Extreme line can be set up either way — ask Aquajett which fits your home."
       />
       <div className={styles.card}>
         <div className={styles.tabs} role="tablist" aria-label="Singlepoint vs Multipoint installation">

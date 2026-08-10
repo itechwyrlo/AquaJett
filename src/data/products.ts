@@ -131,7 +131,7 @@ export const productLines: ProductLine[] = [
         label: 'SP',
         image: supremeSpPhoto,
         details:
-          'Singlepoint unit for shower, fully automatic with push-button, stepless temperature control. 5.5 kW, 4 litres/minute, 7.5" x 3" x 12", and comes with a shower head, riser bar, and soap dish. With digital temperature display and power light indicator, auto cut-off at your desired setting, good performance across low and high water pressure, splash-proof IPX4 casing, and an earth leakage circuit breaker (ELCB).',
+          'Singlepoint unit for shower, fully automatic with push-button, stepless temperature control. 3.5 kW, 4 litres/minute, 7.5" x 3" x 12", and comes with a shower head, riser bar, and soap dish. With digital temperature display and power light indicator, auto cut-off at your desired setting, good performance across low and high water pressure, splash-proof IPX4 casing, and an earth leakage circuit breaker (ELCB).',
       },
     ],
   },

@@ -15,13 +15,13 @@ export const faqItems: FaqItem[] = [
     id: 'singlepoint-vs-multipoint',
     question: "What's the difference between Singlepoint and Multipoint installation?",
     answer:
-      'A Singlepoint installation supplies hot water to one fixture, such as a shower. A Multipoint installation can supply multiple fixtures — like a rain shower, teleshower, faucet, and lavatory sink — from a single unit. Either the Supreme or Extreme line can be set up either way; ask Aquajett which fits your home.',
+      'A Singlepoint installation supplies hot water to one fixture, such as a shower. A Multipoint installation can supply multiple fixtures — like a rain shower, teleshower, faucet, and lavatory sink — from a single unit. Ask Aquajett which fits your home.',
   },
   {
     id: 'installation',
     question: 'Does Aquajett install the water heaters it sells?',
     answer:
-      'Yes. Aquajett provides delivery and installation services after you choose a model and discuss your needs with the team.',
+      'Yes. Aquajett provides delivery and installation services in selected areas of NCR, South Luzon, and North Luzon.',
   },
   {
     id: 'features',
@@ -33,7 +33,7 @@ export const faqItems: FaqItem[] = [
     id: 'pricing-warranty',
     question: 'What about pricing, warranty, or payment options?',
     answer:
-      "Pricing, warranty terms, and payment options aren't published here. Call, message, or email Aquajett directly and the team will walk you through current details.",
+      'All units come with a 1-year product warranty. Payment can be made via Cash on Delivery or Online Payment. Contact Aquajett directly for current pricing.',
   },
   {
     id: 'contact',

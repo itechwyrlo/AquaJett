@@ -21,7 +21,7 @@ export function Hero() {
 
       <Container className={styles.inner}>
         <div className={styles.content}>
-          <span className={styles.eyebrow}>Aquajett Water Heaters Trading</span>
+          <span className={styles.eyebrow}>Aquajett Water Heaters</span>
           <h1 className={styles.heading}>Feel the Warmth & Comfort.</h1>
           <p className={styles.description}>
             Reliable water heating for comfortable mornings, relaxing showers, and everyday living.
