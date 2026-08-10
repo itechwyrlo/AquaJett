@@ -18,7 +18,7 @@ export function Features() {
         <SectionHeading
           eyebrow="Built In"
           title="Every Aquajett Unit Includes"
-          description="The Supreme and Extreme lines each build on this foundation with additional features of their own, detailed above."
+          description="The Instantaneous Water Heaters build on this foundation with additional features of their own, detailed above."
         />
         <div className={styles.grid}>
           {features.map((feature, index) => (
