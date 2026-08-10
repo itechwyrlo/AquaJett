@@ -17,7 +17,7 @@ export function Benefits() {
   return (
     <section className={styles.section} aria-label="Benefits of home hot water comfort">
       <Container>
-        <SectionHeading eyebrow="Why It Matters" title="Feel the Comfort of Hot Water at Home" />
+        <SectionHeading eyebrow="Why It Matters" title="Feel the Warmth & Comfort" />
         <div className={styles.grid}>
           {benefits.map((benefit, index) => (
             <RevealOnScroll key={benefit.title} delayMs={index * 80} className={styles.item}>
