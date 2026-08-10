@@ -9,7 +9,7 @@ export const faqItems: FaqItem[] = [
     id: 'coverage',
     question: 'What areas does Aquajett serve?',
     answer:
-      'Aquajett Water Heaters Trading supplies water heaters and installation services in the South, Metro Manila, and nationwide.',
+      'Aquajett Water Heaters supplies water heaters and installation services in the South, Metro Manila, and nationwide.',
   },
   {
     id: 'singlepoint-vs-multipoint',
@@ -19,15 +19,9 @@ export const faqItems: FaqItem[] = [
   },
   {
     id: 'installation',
-    question: 'Does Aquajett install the water heaters it sells?',
+    question: 'Does Aquajett install the water heaters?',
     answer:
       'Yes. Aquajett provides delivery and installation services in selected areas of NCR, South Luzon, and North Luzon.',
-  },
-  {
-    id: 'features',
-    question: 'What features do Aquajett water heaters have?',
-    answer:
-      'Every model is fully automatic with a minimum-to-maximum temperature selector, a temperature indicator, and lets you set your desired temperature. The Supreme line adds tempered glass, a touch temperature selector, and free shower accessories. The Extreme line adds an ELCB (ground protector) and hot water for the rain shower, teleshower, faucet, and lavatory sink from one unit.',
   },
   {
     id: 'pricing-warranty',
