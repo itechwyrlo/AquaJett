@@ -12,12 +12,6 @@ export const faqItems: FaqItem[] = [
       'Aquajett Water Heaters Trading supplies water heaters and installation services in the South, Metro Manila, and nationwide.',
   },
   {
-    id: 'supreme-vs-extreme',
-    question: "What's the difference between the Supreme and Extreme lines?",
-    answer:
-      'The Supreme line (available in V2 and Black Edition finishes) is fully automatic with a touch temperature selector, temperature indicator, tempered glass, and free shower accessories. The Extreme line supplies hot water to the rain shower, teleshower, faucet, and lavatory sink from a single unit, and adds an ELCB (ground protector) and an elegant design.',
-  },
-  {
     id: 'singlepoint-vs-multipoint',
     question: "What's the difference between Singlepoint and Multipoint installation?",
     answer:
